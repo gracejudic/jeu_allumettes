@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu des allumettes</title>
+    <!-- modifier style body -->
+    <style>
+        #soumettre {
+            &.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+            }    
+        }
+    </style>
+</head>
+<body>
+    <h1>Jeu des allumettes</h1>
+    <p>Il y a 50 allumettes en tout. Pour jouer, entre un chiffre entre 1 et 6. Il sera ensuite déduit du nombre total. 
+        Si tu es la dernière personne à retirer une allumette, tu as gagné !
+    </p>
+    <div id="image-container"></div>
+    <input type="number" id="nombrePropose" name="number" min="1" max="6"/>
+    <input type="submit" id="submitButton" value="Submit"/>
+    <script src="script.js"></script>    
+</body>
+</html>
